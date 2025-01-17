@@ -1,0 +1,203 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(231, 223, 192, 0.489);
+    font-family: Arial, sans-serif;
+}
+a{
+text-decoration: none;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+    font-family: Arial, sans-serif;
+}
+.menu{
+    background-color: white;
+    font-size:large;
+    text-decoration: none;
+    box-shadow: 1px 1px 10px 2px rgba(86, 83, 83, 0.432);
+    border: solid 1px rgb(255, 255, 255);
+   border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    width: 18%;
+    background-color: rgb(116, 171, 243);
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    min-height: 150px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color:#263e87;
+    min-height: 150px;
+}
+.social-icon img {
+    width: 30px;
+    border-radius: 5px;
+}
+.principal{
+    padding: 15px;
+}
+thead{
+    background-color: rgb(24, 31, 117);
+    color: aliceblue;
+}
+table{
+    border: solid black 1px;
+    width: 100%;
+}
+table tr:nth-child(even){
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, sans-serif;
+}
+tbody{
+    border: solid black 1px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#depoimentos {
+    background-color: #f9f9f9; /* Cor de fundo da seção */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#depoimentos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.depoimentos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.depoimento {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.depoimento p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.depoimento strong {
+    color: #007BFF; /* Cor para os nomes dos clientes */
+    font-size: 16px;
+}
+.formulário {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título do formulário */
+.formulário h2 {
+    text-align: center;
+    color: #333; /* Texto escuro */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Texto de descrição */
+.formulário p {
+    text-align: center;
+    color: #666; /* Texto mais claro */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos */
+.formulário label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Cor do texto */
+    font-weight: bold;
+}
+
+/* Estilo dos campos de entrada */
+.formulário input[type="text"],
+.formulário input[type="email"],
+.formulário input[type="number"],
+.formulário textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    border: 1px solid #ddd; /* Borda fina */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho do texto */
+    box-sizing: border-box; /* Evita quebra no layout */
+    transition: border-color 0.3s ease; /* Animação ao focar */
+}
+
+/* Foco nos campos */
+.formulário input[type="text"]:focus,
+.formulário input[type="email"]:focus,
+.formulário input[type="number"]:focus,
+.formulário textarea:focus {
+    border-color: #007bff; /* Borda azul */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Destaque no foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Botão de envio */
+.formulário button {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #007bff; /* Azul forte */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold;
+    cursor: pointer; /* Cursor de mão ao passar sobre */
+    transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Botão ao passar o mouse */
+.formulário button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .formulário {
+        padding: 15px; /* Reduz o espaçamento interno */
+    }
+
+    .formulário h2 {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+}
